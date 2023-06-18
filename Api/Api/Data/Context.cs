@@ -8,5 +8,9 @@ namespace Api.Data
         public Context(DbContextOptions<Context> options) : base(options) { }
 
         public DbSet<User> user { get; set; }
+
+        public DbSet<Auditoria> auditoria { get; set; }
+
+        public DbSet<Error> error { get; set; }
     }
 }
