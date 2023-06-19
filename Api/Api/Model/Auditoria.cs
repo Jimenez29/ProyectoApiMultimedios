@@ -8,9 +8,6 @@ namespace Api.Model
     {
 
         [Key]
-
-        [MaxLength(11)]
-
         public int IdAuditoria { get; set; }
 
         [MaxLength(150)]
@@ -19,10 +16,10 @@ namespace Api.Model
         [MaxLength(150)]
         public string Controller { get; set; }
 
-        [MaxLength(11)]
+       
         public int IdMenu { get; set; }
 
-        [MaxLength(11)]
+        
         public int IdUser { get; set; }
 
         [Column(TypeName = "datetime")]
